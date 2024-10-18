@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Marcin Sztukowski</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-image: url("milky.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 50px auto;
+            background-color: rgba(255, 255, 255, 0.9); /* transparentne tło dla lepszej czytelności */
+            padding: 20px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #2c3e50;
+        }
+
+        .pdf-container {
+            width: 100%;
+            height: 600px;
+            margin-bottom: 20px;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .back-button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <h2>Moje CV</h2>
+        <!-- Osadzanie PDF -->
+        <div class="pdf-container">
+            <embed src="cv.pdf" type="application/pdf" width="100%" height="100%">
+        </div>
+        <!-- Przycisk powrotu -->
+        <a href="index.html" class="back-button">Wróć</a>
+    </section>
+
+</body>
+</html>
