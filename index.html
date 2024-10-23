@@ -107,8 +107,8 @@
 
         <h2><strong>Czym Się Zajmuję</strong></h2>
         <ul>
-            <li>Tworzenie i optymalizacja algorytmów</strong></li>
-            <li>Protokoły oraz administracja i zarządzanie siecią</strong></li>
+            <li>Tworzenie i optymalizacja algorytmów</li>
+            <li>Protokoły oraz administracja i zarządzanie siecią</li>
             <li>Programowanie i rozwiązywanie problemów</li>
             <li>Matematyka i jej zastosowanie w informatyce</li>
         </ul>
@@ -125,13 +125,23 @@
         <p>Jeśli jesteś zainteresowany współpracą lub masz pytania biznesowe, zapraszam do kontaktu:</p>
         
         <div class="contact">
-            <p><strong>Email:</strong> <a href="mailto:sztukowski@vp.pl">sztukowski@vp.pl</a></p>
-            <p><strong>Telefon:</strong> +48 728 700 706</p>
+            <button id="revealContactBtn" onclick="revealContact()">Pokaż kontakt</button>
+            <div id="contactInfo" style="display: none;">
+                <p><strong>Email:</strong> <a href="mailto:sztukowski@vp.pl">sztukowski@vp.pl</a></p>
+                <p><strong>Telefon:</strong> +48 728 700 706</p>
+            </div>
         </div>
     </section>
 
     <footer>
         <p>Marcin Sztukowski &copy;2024</p>
     </footer>
+
+    <script>
+        function revealContact() {
+            document.getElementById('contactInfo').style.display = 'block';
+            document.getElementById('revealContactBtn').style.display = 'none';
+        }
+    </script>
 </body>
 </html>
