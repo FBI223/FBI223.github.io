@@ -21,16 +21,9 @@
             text-align: center;
         }
 
-        header h1 {
+        header h1, header p {
             font-weight: bold;
             color: white;
-            text-align: center;
-        }
-
-        header p {
-            font-weight: bold;
-            color: white;
-            text-align: center;
         }
 
         section {
@@ -79,9 +72,10 @@
 
         ul li {
             text-align: left;
+            font-size: 17px;
+            padding: 5px 0;
         }
 
-        /* Styl linku PDF jak mailto */
         .pdf-link {
             color: #3498db;
             text-decoration: none;
@@ -101,29 +95,31 @@
 
     <section>
         <h2>O Mnie</h2>
-        <p>Cześć! Jestem Marcin, pasjonatem informatyki studiującym na trzecim roku na Uniwersytecie Jagiellońskim w Krakowie. Szczególnie interesuję się programowaniem, ze skupieniem na algorytmach, sieciach i matematyce. Moim celem jest wykorzystanie technologii do efektywnego rozwiązywania złożonych problemów.</p>
-        
-        <p>Lubię pracować nad różnymi projektami, które obejmują kodowanie w różnych językach, od programowania funkcyjnego po C, C#, C++, jave i Pythona. Nieustannie dążę do poszerzania swoich umiejętności i wiedzy w dziedzinie technologii informacyjnych oraz szeroko rozumianej informatyce.</p>
+        <p>Cześć! Jestem Marcin, pasjonatem informatyki studiującym na trzecim roku na Uniwersytecie Jagiellońskim w Krakowie. Szczególnie interesuję się programowaniem, ze skupieniem na algorytmach, sieciach komputerowych i zastosowaniach matematyki w informatyce. Moim celem jest wykorzystywanie technologii do efektywnego rozwiązywania złożonych problemów.</p>
 
-        <h2><strong>Czym Się Zajmuję</strong></h2>
+        <p>Rozwijam się również w dziedzinie <strong>machine learningu i bioinformatyki</strong>, analizując m.in. dane genetyczne (VCF, BAM), sygnały biologiczne (np. EKG) i budując modele AI wspomagające medycynę. Tworzę aplikacje w językach <strong>Python, C++, Java, Swift, C#</strong>, a także rozwijam projekty na <strong>mikrokontrolery (Arduino, ESP32)</strong> z użyciem czujników i systemów embedded.</p>
+
+        <h2>Czym Się Zajmuję</h2>
         <ul>
             <li>Tworzenie i optymalizacja algorytmów</li>
-            <li>Protokoły oraz administracja i zarządzanie siecią</li>
-            <li>Programowanie i rozwiązywanie problemów</li>
-            <li>Matematyka i jej zastosowanie w informatyce</li>
+            <li>Machine learning w medycynie i analizie sygnałów</li>
+            <li>Bioinformatyka: przetwarzanie danych DNA i genomu</li>
+            <li>Programowanie aplikacji desktopowych i mobilnych (Java, Swift, Python, C++)</li>
+            <li>Systemy embedded i mikrokontrolery (Arduino IDE, czujniki, IoT)</li>
+            <li>Administracja i bezpieczeństwo sieci komputerowych (IPv4, IPv6, VPN, routing)</li>
+            <li>Matematyka stosowana: algebra liniowa, PCA, analiza danych</li>
         </ul>
 
         <h2>Moje Portfolio</h2>
         <p>Zapraszam do odwiedzenia mojego profilu na GitHubie, gdzie znajdziesz moje projekty:</p>
-        <p><a href="https://github.com/FBI223" target="_blank">GitHub - Marcin Sztukowski</a></p>
+        <p><a href="https://github.com/FBI223" target="_blank">GitHub – Marcin Sztukowski</a></p>
 
         <p>Również zapraszam do zapoznania się z moim CV, gdzie znajdziesz szczegółowe informacje na temat moich umiejętności i doświadczenia:</p>
-        <!-- Zwykły link PDF podobny do mailto -->
         <p><a href="cv.pdf" class="pdf-link" target="_blank">Zobacz moje CV</a></p>
 
         <h2>Kontakt</h2>
         <p>Jeśli jesteś zainteresowany współpracą lub masz pytania biznesowe, zapraszam do kontaktu:</p>
-        
+
         <div class="contact">
             <button id="revealContactBtn" onclick="revealContact()">Pokaż kontakt</button>
             <div id="contactInfo" style="display: none;">
