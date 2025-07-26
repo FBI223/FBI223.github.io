@@ -1,137 +1,171 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marcin Sztukowski - Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Marcin Sztukowski - Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url("milky.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 0;
+    }
 
-        header {
-            background-color: #2c3e50;
-            color: white;
-            padding: 30px;
-            text-align: center;
-        }
+    header {
+      background-color: rgba(44, 62, 80, 0.85);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
 
-        section {
-            max-width: 900px;
-            margin: 50px auto;
-            background-color: #ffffff;
-            padding: 20px;
-            box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
-            border-radius: 8px;
-        }
+    header h1 {
+      margin: 0;
+      font-size: 34px;
+    }
 
-        h2 {
-            color: #2c3e50;
-        }
+    header .subtitle {
+      margin-top: 10px;
+      font-size: 18px;
+      line-height: 1.6;
+      color: white;
+    }
 
-        p {
-            font-size: 18px;
-            line-height: 1.6;
-            color: #34495e;
-            text-align: justify;
-        }
+    section {
+      max-width: 900px;
+      margin: 50px auto;
+      background-color: rgba(255, 255, 255, 0.93);
+      padding: 20px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
 
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
+    h2 {
+      color: #2c3e50;
+    }
 
-        ul li {
-            text-align: left;
-            font-size: 17px;
-            padding: 5px 0;
-        }
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #34495e;
+      text-align: justify;
+    }
 
-        .contact {
-            margin-top: 30px;
-            text-align: center;
-        }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
 
-        .contact a {
-            text-decoration: none;
-            color: #3498db;
-            font-weight: bold;
-        }
+    ul li {
+      text-align: left;
+      font-size: 17px;
+      padding: 5px 0;
+    }
 
-        .pdf-link {
-            color: #3498db;
-            text-decoration: none;
-        }
+    .contact {
+      margin-top: 30px;
+      text-align: center;
+    }
 
-        .pdf-link:hover {
-            text-decoration: underline;
-            color: #2980b9;
-        }
+    .contact a {
+      text-decoration: none;
+      color: #3498db;
+      font-weight: bold;
+    }
 
-        footer {
-            text-align: center;
-            font-size: 12px;
-            color: #999;
-            padding: 10px;
-            background-color: #f4f4f4;
-        }
-    </style>
+    .cv-button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 12px 24px;
+      background-color: #3498db;
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .cv-button:hover {
+      background-color: #2980b9;
+    }
+
+    .cv-button-left {
+      text-align: left;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #f4f4f4;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Marcin Sztukowski</h1>
-        <p>Student IV roku Informatyki | Wydział Matematyki i Informatyki UJ</p>
-    </header>
 
-    <section>
-        <h2>O Mnie</h2>
-        <p>Cześć! Jestem Marcin, pasjonatem informatyki studiującym na czwartym roku na Uniwersytecie Jagiellońskim w Krakowie. Szczególnie interesuję się programowaniem, ze skupieniem na algorytmach, sieciach komputerowych i zastosowaniach matematyki w informatyce. Moim celem jest wykorzystywanie technologii do efektywnego rozwiązywania złożonych problemów.</p>
+  <header>
+    <h1>Marcin Sztukowski</h1>
+    <div class="subtitle">
+      <p>Computer Science Student</p>
+      <p>Faculty of Mathematics and CS, Jagiellonian University</p>
+    </div>
+  </header>
 
-        <p>Rozwijam się również w dziedzinie <strong>machine learningu i bioinformatyki</strong>, analizując m.in. dane genetyczne (VCF, BAM), sygnały biologiczne (np. EKG) i budując modele AI wspomagające medycynę. Tworzę aplikacje w językach <strong>Python, C++, Java, Swift, C#</strong>, a także rozwijam projekty na <strong>mikrokontrolery (Arduino, ESP32)</strong> z użyciem czujników i systemów embedded.</p>
+  <section>
+    <h2>About Me</h2>
+    <p>Hi! I'm Marcin, a <strong>4th year</strong> computer science student at the Jagiellonian University in Kraków. I’m particularly interested in programming, with a focus on algorithms, computer networks, and the applications of mathematics in computer science. My goal is to use technology to effectively solve complex problems.</p>
 
-        <h2>Czym Się Zajmuję</h2>
-        <ul>
-            <li>Tworzenie i optymalizacja algorytmów</li>
-            <li>Machine learning w medycynie i analizie sygnałów</li>
-            <li>Bioinformatyka: przetwarzanie danych DNA i genomu</li>
-            <li>Programowanie aplikacji desktopowych i mobilnych (Java, Swift, Python, C++)</li>
-            <li>Systemy embedded i mikrokontrolery (Arduino IDE, czujniki, IoT)</li>
-            <li>Administracja i bezpieczeństwo sieci komputerowych (IPv4, IPv6, VPN, routing)</li>
-            <li>Matematyka stosowana: algebra liniowa, analiza danych</li>
-            <li>Metody Numeryczne: </li>
-        </ul>
+    <p>I'm also developing in the field of <strong>machine learning and bioinformatics</strong>, analyzing genetic data (VCF, BAM), biological signals (e.g. ECG), and building AI models that support medical applications. I create applications in <strong>Python, C++, Java, Swift, C#</strong>, and develop projects on <strong>microcontrollers (Arduino, ESP32)</strong> with sensors and embedded systems.</p>
 
-        <h2>Moje Portfolio</h2>
-        <p>Zapraszam do odwiedzenia mojego profilu na GitHubie, gdzie znajdziesz moje projekty:</p>
-        <p><a href="https://github.com/FBI223" target="_blank">GitHub – Marcin Sztukowski</a></p>
+    <h2>What I Do</h2>
+    <ul>
+      <li>Designing and optimizing algorithms</li>
+      <li>Machine learning in medicine and signal analysis</li>
+      <li>Bioinformatics: DNA and genome data processing</li>
+      <li>Desktop and mobile application development (Java, Swift, Python, C++)</li>
+      <li>Embedded systems and microcontrollers (Arduino IDE, sensors, IoT)</li>
+      <li>Network administration and security (IPv4, IPv6, VPN, routing)</li>
+      <li>Applied mathematics: linear algebra, data analysis</li>
+      <li>Numerical methods</li>
+    </ul>
 
-        <p>Również zapraszam do zapoznania się z moim CV, gdzie znajdziesz szczegółowe informacje na temat moich umiejętności i doświadczenia:</p>
-        <p><a href="cv.pdf" class="pdf-link" target="_blank">Zobacz moje CV</a></p>
+    <h2>My Portfolio</h2>
+    <p>Feel free to visit my GitHub profile where you can find my projects:</p>
+    <p><a href="https://github.com/FBI223" target="_blank">GitHub – Marcin Sztukowski</a></p>
 
-        <h2>Kontakt</h2>
-        <p>Jeśli jesteś zainteresowany współpracą lub masz pytania biznesowe, zapraszam do kontaktu:</p>
+    <p>Or download/view my full CV below:</p>
+    <div class="cv-button-left">
+      <a href="cv.html" class="cv-button">📄 Open CV</a>
+    </div>
 
-        <div class="contact">
-            <button id="revealContactBtn" onclick="revealContact()">Pokaż kontakt</button>
-            <div id="contactInfo" style="display: none;">
-                <p><strong>Email:</strong> <a href="mailto:sztukowski@vp.pl">sztukowski@vp.pl</a></p>
-                <p><strong>Telefon:</strong> +48 728 700 706</p>
-            </div>
-        </div>
-    </section>
+    <h2>Contact</h2>
+    <p>If you're interested in collaboration or have business inquiries, feel free to contact me:</p>
 
-    <footer>
-        <p>Marcin Sztukowski &copy;2025</p>
-    </footer>
+    <div class="contact">
+      <button id="revealContactBtn" onclick="revealContact()">Show contact</button>
+      <div id="contactInfo" style="display: none;">
+        <p><strong>Email:</strong> <a href="mailto:sztukowski@vp.pl">sztukowski@vp.pl</a></p>
+        <p><strong>Phone:</strong> +48 728 700 706</p>
+      </div>
+    </div>
+  </section>
 
-    <script>
-        function revealContact() {
-            document.getElementById('contactInfo').style.display = 'block';
-            document.getElementById('revealContactBtn').style.display = 'none';
-        }
-    </script>
+  <footer>
+    <p>&copy; 2025 Marcin Sztukowski</p>
+  </footer>
+
+  <script>
+    function revealContact() {
+      document.getElementById('contactInfo').style.display = 'block';
+      document.getElementById('revealContactBtn').style.display = 'none';
+    }
+  </script>
+
 </body>
 </html>
+
